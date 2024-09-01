@@ -1,0 +1,98 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.all-dark {
+    background-color: #262626;
+  color: #ffffff;
+}
+
+.block0 {
+    color: "red";
+    stroke: "yellow";
+}
+
+.clamHeader {
+background-color: #1a1a1a;
+text-align: center;
+height: fit-content+9.5px;
+width: fit-content+9.5px;
+}
+
+.clamBody {
+    text-align: center;
+    font-size: 16px;
+    background-color: #4b4b4b;
+}
+
+.clamHeader h1 {
+    font-size: 46px;
+}
+
+.clamHeader p {
+    font-size: 23px;
+}
+
+
+  .moving-shine-button {
+    position: relative;
+    overflow: hidden;
+    transition: #0ece5b 0.85s;
+  }
+  
+  .moving-shine-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, #0ece5b 0%, rgba(255, 255, 255, 0) 100%);
+    transition: opacity 0.85s;
+    transform: rotate(30deg);
+    opacity: 0;
+    z-index: 1;
+    animation: shine 2s infinite linear;
+  }
+
+  .moving-shine-gen-button {
+    position: relative;
+    overflow: hidden;
+    transition: #320a9f 0.85s;
+    
+  }
+  
+  .moving-shine-gen-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, #320a9f 0%, rgba(255, 255, 255, 0) 100%);
+    transition: opacity 0.85s;
+    transform: rotate(30deg);
+    opacity: 0;
+    z-index: 1;
+    animation: shine 2s infinite linear;
+  }
+  
+  .moving-shine-gen-button:hover::before {
+    opacity: 1;
+  }
+
+  .moving-shine-button:hover::before {
+    opacity: 1;
+  }
+  
+  @keyframes shine {
+    0% {
+      transform: translateX(-200%) rotate(30deg);
+    }
+    100% {
+      transform: translateX(200%) rotate(30deg);
+    }
+  }
+  
